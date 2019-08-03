@@ -43,7 +43,7 @@ function runcommands(command, search) {
     axios
       .get(query)
       .then(response => {
-        console.log(response);
+        console.log(response.data);
       })
       .catch(err => {
         console.log(err.message);
